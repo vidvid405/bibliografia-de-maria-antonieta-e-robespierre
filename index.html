@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografias: Maria Antonieta e Rubens Pierre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- TELA DE CARREGAMENTO (SPLASH SCREEN) -->
+    <div id="loader">
+        <div class="loader-content">
+            <h2>Carregando o Projeto...</h2>
+            <p class="criadores">Desenvolvido por:</p>
+            <ul class="nomes-grupo">
+                <li>Vicente Daniel</li>
+                <li>Vítor Vilanova</li>
+                <li>Rafael Rossi</li>
+            </ul>
+            <div class="barra-carregamento"><div></div></div>
+        </div>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL DO SITE -->
+    <header>
+        <h1>Espaço das Biografias</h1>
+        <p>Conheça as histórias e trajetórias de figuras marcantes da história e da arte</p>
+    </header>
+
+    <main class="container">
+        <!-- Perfil Maria Antonieta -->
+        <section class="card">
+            <h2>Maria Antonieta</h2>
+            <h3>A Última Rainha da França</h3>
+            <p>Maria Antonieta (1755–1793) nasceu na Áustria como uma arquiduquesa e casou-se com o rei Luís XVI para selar a paz entre dois países rivais. Ela se tornou a rainha da França em um período de muita pobreza do povo. Ficou muito conhecida por seu estilo de vida luxuoso, festas caras e vestidos cheios de joias no Palácio de Versalhes. Durante a Revolução Francesa, ela e sua família foram presas. Maria Antonieta acabou condenada e morta na guilhotina em 1793, tornando-se um dos maiores símbolos do fim da monarquia absolutista.</p>
+        </section>
+
+        <!-- Perfil Rubens Pierre -->
+        <section class="card">
+            <h2>Rubens Pierre</h2>
+            <h3>Pintor de Almas e Emoções</h3>
+            <p>Rubens Pierre é reconhecido no mundo das artes visuais contemporâneas por suas pinturas profundas e expressivas. Suas obras costumam misturar o estilo figurativo com o abstrato, focando muito nos sentimentos humanos, rostos marcantes e no uso forte de luzes e sombras. O artista constrói suas telas criando texturas que chamam a atenção do público. Ele participa de diversas exposições e mostras de arte, ajudando a espalhar a cultura através de quadros que fazem as pessoas pararem para pensar sobre a vida e o tempo.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Site de Biografias | Criado de forma definitiva no GitHub Pages</p>
+    </footer>
+
+    <!-- SCRIPT DO TEMPO DE CARREGAMENTO -->
+    <script>
+        // Mantém a tela por 3 segundos antes de sumir suavemente
+        setTimeout(function() {
+            const loader = document.getElementById('loader');
+            loader.style.opacity = '0';
+            setTimeout(function() {
+                loader.style.display = 'none';
+            }, 500);
+        }, 3000);
+    </script>
+</body>
+</html>
